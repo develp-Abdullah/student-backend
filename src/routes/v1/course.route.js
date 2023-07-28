@@ -8,8 +8,8 @@ const router = express.Router();
 
 router
   .route('/')
-  .post(auth('course'), validate(courseValidation.createCourse), courseController.createCourse)
-  .get(auth('course'), validate(courseValidation.getCourses), courseController.getCourses);
+  .post(validate(courseValidation.createCourse), courseController.createCourse)
+  .get(validate(courseValidation.getCourses), courseController.getCourses);
 
 router
   .route('/:courseId')
