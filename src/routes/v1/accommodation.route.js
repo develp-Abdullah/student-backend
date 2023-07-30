@@ -8,16 +8,8 @@ const router = express.Router();
 
 router
   .route('/')
-  .post(
-    auth('accommodation'),
-    validate(accommodationValidation.createAccommodation),
-    accommodationController.createAccommodation
-  )
-  .get(
-    auth('accommodation'),
-    validate(accommodationValidation.getAccommodations),
-    accommodationController.getAccommodations
-  );
+  .post(validate(accommodationValidation.createAccommodation), accommodationController.createAccommodation)
+  .get(validate(accommodationValidation.getAccommodations), accommodationController.getAccommodations);
 
 router
   .route('/:accommodationId')
