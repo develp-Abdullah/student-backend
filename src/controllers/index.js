@@ -4,4 +4,5 @@ module.exports.contactUsController = require('./contactUs.controller');
 module.exports.blogController = require('./blog.controller');
 module.exports.paymentController = require('./payment.controller');
 module.exports.courseController = require('./course.controller');
+module.exports.otpController = require('./otp.controller');
 module.exports.accommodationController = require('./accommodation.controllerr');

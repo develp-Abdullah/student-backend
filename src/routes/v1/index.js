@@ -5,6 +5,8 @@ const contactUsRoute = require('./contactUs.route');
 const docsRoute = require('./docs.route');
 const blogRoute = require('./blog.route');
 const courseRoute = require('./course.route');
+const otpRoute = require('./otp.route');
+const verifyOtpRoute = require('./verifyOtp.route');
 const paymentRoute = require('./payment.route');
 const accommodationRoute = require('./accommodation.route');
 
@@ -20,6 +22,14 @@ const defaultRoutes = [
   {
     path: '/payment',
     route: paymentRoute,
+  },
+  {
+    path: '/otp',
+    route: otpRoute,
+  },
+  {
+    path: '/verifyotp',
+    route: verifyOtpRoute,
   },
   {
     path: '/accommodation',
